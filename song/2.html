@@ -1,0 +1,164 @@
+<!doctype html>
+
+<html lang="en">
+ 
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <title>Oh I Can Hear the SOUND</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="page1">
+        <p id="one">It's so far from me now</p>
+        <p id="two">But oh, I can hear the sound</p>
+    </div>
+    
+    <a href="#"> <img id="radio1" src="../img/radio/radio1.svg" alt="radio"> </a>
+    <a href="#"><img id="radio2" src="../img/radio/radio2.svg" alt="radio"></a>
+    <a href="#"><img id="radio3" src="../img/radio/radio3.svg" alt="radio"> </a>
+    <a href="#"><img id="radio4" src="../img/radio/radio4.svg" alt="radio"> </a>
+    <a href="#"><img id="radio5" src="../img/radio/radio5.svg" alt="radio"> </a>
+    <a href="3.html"><img onmouseover="PlaySound('mySound')" 
+        onmouseout="StopSound('mySound')" id="radio6" src="../img/radio/radio6.svg" alt="radio"></a> 
+    <a href="#"><img id="radio7" src="../img/radio/radio7.svg" alt="radio"> </a>
+    
+    <audio id='mySound' src="../audio/radio.mp3"></audio>
+    
+    
+<script>
+    function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+    function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("radio1");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+        
+document.getElementById("radio1").addEventListener('click', fadeOutEffect);
+
+</script>
+    
+<script>
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("radio3");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+
+document.getElementById("radio3").addEventListener('click', fadeOutEffect);
+</script>
+    
+<script>                                   
+    
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("radio4");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("radio4").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+    
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("radio5");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("radio5").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("radio2");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("radio2").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("radio7");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("radio7").addEventListener('click', fadeOutEffect);
+    
+    </script>
+    
+    
+</body>
+                   
+</html>

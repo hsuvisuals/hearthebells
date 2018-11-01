@@ -1,0 +1,164 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <title>Oh I Can Hear the Sound</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+   <div class="page1">
+        <p id="one">It's so far from me now</p>
+        <p id="two">But oh, I can hear the sound</p>
+    </div>
+    
+    <a href="#"> <img id="instrument1" src="../img/instrument/instrument1.svg" alt="instrument"> </a> 
+    <a href="#"><img id="instrument2" src="../img/instrument/instrument2.svg" alt="instrument"> </a>
+    <a href="4.html"><img onmouseover="PlaySound('mySound')" 
+        onmouseout="StopSound('mySound')" id="instrument3" src="../img/instrument/instrument3.svg" alt="instrument"> </a>
+    <a href="#"> <img id="instrument4" src="../img/instrument/instrument4.svg" alt="instrument"> </a>
+    <a href="#"><img id="instrument5" src="../img/instrument/instrument5.svg" alt="instrument"> </a> 
+    <a href="#"><img id="instrument6" src="../img/instrument/instrument6.svg" alt="instrument"> </a> 
+    <a href="#"><img id="instrument7" src="../img/instrument/instrument7.svg" alt="instrument"> </a>
+    
+    
+    <audio id='mySound' src="../audio/saxophone.mp3"></audio>
+    
+    
+<script>
+    function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+    function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+     
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("instrument1");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+        
+document.getElementById("instrument1").addEventListener('click', fadeOutEffect);
+
+</script>
+    
+<script>
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("instrument4");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+
+document.getElementById("instrument4").addEventListener('click', fadeOutEffect);
+</script>
+    
+<script>                                   
+    
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("instrument5");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("instrument5").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+    
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("instrument6");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("instrument6").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("instrument7");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("instrument7").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("instrument2");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("instrument2").addEventListener('click', fadeOutEffect);
+    
+    </script>
+    
+</body>
+                   
+</html>

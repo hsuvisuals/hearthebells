@@ -1,0 +1,174 @@
+<!doctype html>
+
+<html lang="en">
+ 
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <title>Oh I Can Hear the SOUND</title>
+    
+     <link rel="stylesheet" href="../css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+</head>
+
+<body>
+    
+    <div class="page1">
+        <p id="one">It's so far from me now</p>
+        <p id="two">But oh, I can hear the sound</p>
+    </div>
+    
+    
+    <a href="#"><img id="bell1" class="fade" src="../img/bell/bell1.svg" alt="bell"></a>
+    
+    <a href="2.html">
+        <img onmouseover="PlaySound('mySound')" 
+        onmouseout="StopSound('mySound')" 
+        id="bell2" 
+        src="../img/bell/bell7.svg" 
+                          alt="bell">
+    </a> 
+    
+    <a href="#"><img id="bell3" class="fade" src="../img/bell/bell2.svg" alt="bell"></a> 
+    <a href="#"><img id="bell4" class="fade" src="../img/bell/bell3.svg" alt="bell"> </a>
+    <a href="#"><img id="bell5" src="../img/bell/bell4.svg" alt="bell"> </a>
+    <a href="#"><img id="bell6" src="../img/bell/bell5.svg" alt="bell"> </a>
+    <a href="#"> <img id="bell7" src="../img/bell/bell6.svg" alt="bell"> </a>
+    
+    <audio id='mySound' src="../audio/bell.mp3"></audio>
+    
+    
+<script>
+    function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+    function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+    
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("bell1");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+        
+document.getElementById("bell1").addEventListener('click', fadeOutEffect);
+
+</script>
+    
+<script>
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("bell3");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+
+document.getElementById("bell3").addEventListener('click', fadeOutEffect);
+</script>
+    
+<script>                                   
+    
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("bell4");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("bell4").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+    
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("bell5");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("bell5").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("bell6");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("bell6").addEventListener('click', fadeOutEffect);
+    </script>
+    
+    <script>
+        function fadeOutEffect() {
+        var fadeTarget = document.getElementById("bell7");
+        var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity < 0.1) {
+            clearInterval(fadeEffect);
+        } else {
+            fadeTarget.style.opacity -= 0.1;
+        }
+    }, 50);
+}
+
+document.getElementById("bell7").addEventListener('click', fadeOutEffect);
+    
+    </script>
+    
+
+</body>
+                   
+</html>
