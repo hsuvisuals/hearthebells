@@ -6,6 +6,8 @@ article {
     align-items:  center;
 }
 
+.pointer {cursor: pointer;}
+
 h2 {
     font-size: 60px;
     padding-top: 5px;
@@ -38,6 +40,12 @@ article a {
     
 }
 
+#bg {
+      position: fixed;
+     width: 100%;
+      background-size: cover;
+      z-index: -1;
+}
 
 
 html {
@@ -61,6 +69,7 @@ html {
     font-family: 'IBM Plex Mono', monospace;
     color: #fff;
     margin-bottom: 0;
+    
 }
 
 #two {
@@ -101,7 +110,7 @@ html {
     margin: 0;
     position: absolute;
    top: 372px;
-    left: 120px;;
+    left: 110px;;
 
 }
 
@@ -111,7 +120,7 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 1597px;
+    left: 1449px;
     top: 285px;
 
 }
@@ -233,7 +242,7 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 1507px;
+    left: 1359px;
     top: 156px;
 }
 
@@ -283,8 +292,8 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 41px;
-    top: 218px;
+    left: 50px;
+    top: 394px;
 }
 
 
@@ -314,7 +323,7 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 1605px;
+    left: 1435px;
     top: 295px;
 }
 
@@ -351,8 +360,8 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 254px;
-    top: 681px;
+    left: 210px;
+    top: 162px;
 }
 
 #instrument1 {
@@ -398,7 +407,7 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 1466px;
+    left: 1365px;
     top: 135px;
 }
 
@@ -517,7 +526,7 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 1553px;
+    left: 1358px;
     top: 93px;
 }
 
@@ -528,7 +537,7 @@ html {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 1400px;
+    left: 1285px;
     bottom: 76px;
 }
 
